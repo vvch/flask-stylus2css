@@ -23,7 +23,7 @@ def _convert(compiler, src, dst):
     outfile.write(output)
     outfile.close()
 
-    print 'compiled "%s" into "%s"' % (src, dst)
+    print('compiled "%s" into "%s"' % (src, dst))
 
 def stylus2css(app, css_folder='templates', stylus_folder='src/stylus', force=False):
     if not hasattr(app, 'static_url_path'):
